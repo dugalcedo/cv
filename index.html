@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>dacv</title>
+</head>
+<body>
+    <div id="lang-buttons">
+        <button id="en-btn">
+            <img src="./icons/england.png" alt="english flag">
+        </button>
+        <button id="sv-btn">
+            <img src="./icons/sweden.png" alt="swedish flag">
+        </button>
+    </div>
+    <div id="cv">
+
+        <header class="flex">
+            <div id="dug">
+                <img src="dug.jpg" alt="Photo of Doug Alcedo" class="ar1">
+            </div>
+            <div>
+                <h1>Doug Alcedo</h1>
+                <h2 data-lang="subtitle"></h2>
+                <div id="about">
+                    <h3 data-lang="about"></h3>
+                    <div class="body">
+                        <div class="field">
+                            <div data-lang="email"></div>
+                            <div>dougalcedo@gmail.com</div>
+                        </div>
+                        <div class="field">
+                            <div data-lang="phone"></div>
+                            <div>+46 73-956 09 60</div>
+                        </div>
+                        <div class="field">
+                            <div>Linkedin</div>
+                            <div>
+                                <a href="https://linkedin.com/dalcedo" target="_blank" rel="noreferrer">https://linkedin.com/in/dalcedo</a>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div>Github</div>
+                            <div>
+                                <a href="http://github.com/dugalcedo" target="_blank" rel="noopener noreferrer">http://github.com/dugalcedo</a>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div>Location</div>
+                            <div>Tullinge, <span data-lang="stockholmcounty"></span>, <span data-lang="sweden"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="skills" class="card">
+            <h3 data-lang="webdevskills"></h3>
+            <div class="body"></div>
+        </section>
+        <br>
+
+        <section id="otherskills-exp">
+            <section id="exp" class="card">
+                <h3 data-lang="experience"></h3>
+                <div class="body">
+
+                </div>
+            </section>
+
+            <section id="other">
+
+                <section id="other-skills" class="small-card">
+                    <h3 data-lang="otherskills"></h3>
+                    <div class="body">
+                        <div data-lang="fluenten"></div>
+                        <div data-lang="fluentsv"></div>
+                        <div data-lang="teamwork"></div>
+                        <div data-lang="teamleadership"></div>
+                        <div data-lang="logistics"></div>
+                        <div data-lang="teaching"></div>
+                        <div data-lang="communication"></div>
+                        <div data-lang="timemanagement"></div>
+                        <div data-lang="fastlearning"></div>
+                        <div data-lang="adaptability"></div>
+                    </div>
+                </section>
+
+                <section id="other-edu" class="small-card">
+                    <h3 data-lang="edu"></h3>
+                    <div class="body">
+                        <div class="edu">
+                            <h5 data-lang="svandpr"></h5>
+                            <div>Komvux, 2021-2023</div>
+                        </div>
+                        <div class="edu">
+                            <h5 data-lang="journal"></h5>
+                            <div>Associate of the Arts</div>
+                            <div>College of the Desert, Palm Desert, CA, 2015-2016</div>
+                        </div>
+                        <div class="edu">
+                            <h5 data-lang="hs"></h5>
+                            <div>Temecula Valley High School, Temecula, CA, 2010</div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="ref-etc">
+            <section id="references" class="card">
+                <h3 data-lang="references"></h3>
+                <div class="body">
+                    <div class="ref">
+                        <h4>Jørgen Åke Dyberg</h4>
+                        <h5>UX Analyst @ Diggit</h5>
+                        <p>jorgen@diggit.io | +47 98013873</p>
+                    </div>
+                    <div class="ref">
+                        <h4>Povilas Urbonas</h4>
+                        <h5>Web Developer @ Allente</h5>
+                        <p>povilas.urbonas85@gmail.com</p>
+                    </div>
+                </div>
+            </section>
+            <section id="examples" class="small-card">
+                <h3 data-lang="examples"></h3>
+                <div class="ref">
+                    <h5 data-lang="backend"></h5>
+                    <p>
+                        <a href="https://my-portfolio-tan-five.vercel.app/backend-eval.webp" target="_blank" rel="noopener noreferrer">https://my-portfolio-tan-five.vercel.app/backend-eval.webp</a>
+                    </p>
+                </div>
+                <div class="ref">
+                    <h5 data-lang="myport"></h5>
+                    <p>
+                        <a href="https://my-portfolio-tan-five.vercel.app/" target="_blank" rel="noopener noreferrer">https://my-portfolio-tan-five.vercel.app/</a>
+                    </p>
+                </div>
+            </section>
+        </section>
+
+    </div>
+    <script src="lang.js"></script>
+    <script src="skills.js"></script>
+    <script src="exp.js"></script>
+</body>
+</html>

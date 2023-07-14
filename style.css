@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "Pridi";
+    src: url("./pridi/Pridi-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Varela Round";
+    src: url("./varela-round/VarelaRound-Regular.ttf");
+}
+
+:root {
+    --page-bg: #f3c3d0;
+    --page-bg2: #927a81;
+    --bg: #01120c;
+    --bg2: #051f16;
+    --link: #9ff0d3;
+    --contrast: #ff4e6b;
+    --lighter: rgba(255, 255, 255, 0.2);
+    --lighter2: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: "Varela Round", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(45deg, var(--page-bg), var(--page-bg2));
+    color: whitesmoke;
+    padding: 5rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: "Pridi", serif;
+    font-weight: lighter;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid black;
+}
+
+#lang-buttons {
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+}
+
+#lang-buttons button {
+    border: 0;
+    cursor: pointer;
+    transition: transform 125ms;
+}
+
+#lang-buttons button:hover {
+    transform: scale(1.2);
+}
+
+#cv {
+    width: 900px;
+    margin: auto;
+    background-image: linear-gradient(135deg, var(--bg), var(--bg2));
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+
+    border-radius: .5rem;
+
+    padding: 2rem;
+}
+
+
+
+#dug img {
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50% 70% 50% 70%;
+    filter: grayscale(0.25) brightness(1.2) contrast(0.9);
+    
+    border: 1rem solid var(--lighter);
+}
+
+header {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 
+        1px 1px 0 var(--contrast),
+        -1px 1px 0 var(--contrast),
+        1px -1px 0 var(--contrast),
+        -1px -1px 0 var(--contrast)
+    ;
+}
+
+#skills .body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 0.7rem;
+    flex: 0 0 150px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 125ms;
+}
+
+#about h3 {
+    background-color: var(--lighter2);
+    padding: .25rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+#about .field {
+    font-size: .9rem;
+}
+
+
+
+#about .field:not(:last-child) {
+    margin-bottom: .5rem;
+    border-bottom: 1px soild var(--lighter2);
+}
+
+#about .field > div:last-child {
+    text-align: right;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.skill img {
+    filter: invert(1);
+    width: 24px;
+}
+
+.card > h3 {
+    margin-left: 3rem;
+    border: 1px solid var(--lighter);
+    display: inline-block;
+    padding: 0 2rem;
+    border-radius: 2rem 1rem 0 0;
+    position: relative;
+    top: 1px;
+}
+
+.card > div {
+    border: 1px solid var(--lighter);
+    border-radius: 2rem 1rem 2rem 1rem;
+    padding: 1rem;
+}
+
+#otherskills-exp {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#other {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.small-card h3 {
+    font-size: 1rem;
+    text-align: right;
+    background-color: var(--lighter2);
+    padding: .25rem;
+    margin-bottom: .25rem;
+}
+
+.small-card .body {
+    font-size: .8rem;
+    text-align: right;
+}
+
+.flex {display: flex;}
+.ar1 {aspect-ratio: 1;}
+
+h5, h6 {
+    font-size: .8rem;
+}
+
+h6 {
+    opacity: .8;
+    font-style: italic;
+}
+
+.experience h4 {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.experience .sub {
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.experience p {
+    margin: 0 0 1rem 0;
+    font-size: .9rem;
+}
+
+#other-experiences {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.other-experience {
+    border: 1px solid var(--lighter);
+    padding: .5rem;
+    flex-grow: 1;
+}
+
+.other-experience div {
+    font-size: .7rem;
+}
+
+.edu:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+#ref-etc {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+#examples {
+    margin-top: 1rem;
+}
+
+#examples .ref {
+    text-align: right;
+}
+
+#references .body {
+    display: flex;
+    gap: 1rem;
+}
+
+.ref p {
+    font-size: .8rem;
+}
+
