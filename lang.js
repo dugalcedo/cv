@@ -7,6 +7,8 @@ const svBtn = qs('#sv-btn')
 enBtn.addEventListener('click', ()=>{translate(0)})
 svBtn.addEventListener('click', ()=>{translate(1)})
 
+
+
 const strings = {
     subtitle: [
         "Freelance web developer and tutor",
@@ -119,6 +121,24 @@ const strings = {
     examples: ['Examples', 'Exempel'],
     myport: ['My portfolio site', 'Min portfolio webbsida'],
     backend: ['Backend job simulation', 'Backend jobbsimulation']
+}
+
+if (location.search) {
+    let queries = location.search.replace('?','').split('&')
+    queries = queries.map(x => x.split('='))
+    queries = Object.fromEntries(queries)
+    if (queries.lang) {
+        translate(queries.lang)
+        setLang(queries.lang)
+    }
+    if (queries.pdf) {
+        const langBtns = document.querySelector(`#lang-buttons`)
+        const cv = document.querySelector(`#cv`)
+        langBtns.style.display = 'none'
+        cv.style.width = '100%'
+        cv.style.borderRadius = 0
+        document.body.style.padding = 0
+    }
 }
 
 function translate(lang) {
